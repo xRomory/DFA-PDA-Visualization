@@ -94,5 +94,3 @@ This project is open-source and available under the **MIT License**.
 - Created for educational purposes to help students understand **abstract computation models** through **visual interaction**.
 
 ---
-
-### ⭐ If you found this project helpful, consider giving it a star on GitHub!
