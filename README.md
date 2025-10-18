@@ -19,10 +19,10 @@ The main objective is to:
 
 ## Features
 
-- 🎨 **Visual Representation** — Displays DFA and PDA state diagrams with transitions.
-- ⚙️ **Interactive Simulation** — Users can manually input strings to see how each automaton processes them.
-- 🔍 **Step-by-Step Execution** — Observe how states and stacks (for PDA) change as each symbol is read.
-- 💡 **Educational Comparison** — Clearly shows why PDA is more powerful than DFA (e.g., stack memory usage).
+- **Visual Representation** — Displays DFA and PDA state diagrams with transitions.
+- **Interactive Simulation** — Users can manually input strings to see how each automaton processes them.
+- **Step-by-Step Execution** — Observe how states and stacks (for PDA) change as each symbol is read.
+- **Educational Comparison** — Clearly shows why PDA is more powerful than DFA (e.g., stack memory usage).
 
 ---
 
@@ -38,7 +38,7 @@ The main objective is to:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
