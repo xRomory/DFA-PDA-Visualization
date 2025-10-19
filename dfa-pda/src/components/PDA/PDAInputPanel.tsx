@@ -18,7 +18,6 @@ interface PDAInputPanelProps {
 
 export const PDAInputPanel: React.FC<PDAInputPanelProps> = ({
   currentState,
-  stack,
   execution,
   history,
   onProcessingString,
