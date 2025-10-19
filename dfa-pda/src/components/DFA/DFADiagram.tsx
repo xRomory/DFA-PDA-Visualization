@@ -7,12 +7,13 @@ import type {
 import { binaryEndsWith10DFA } from "@/helper/dfa";
 import { DFATransitionArrow } from "@/components/DFA/DFATransitionArrow";
 import { DFAStateNode } from "@/components/DFA/DFAStateNode";
-import { DFAInputPanel } from "./DFAInputPanel";
+import { DFAInputPanel } from "@/components/DFA/DFAInputPanel";
+import DFAFooter from "@/components/DFA/DFAFooter";
 
 export const DFADiagram: React.FC = () => {
   const [dfa, setDfa] = useState<DFAMachine>(binaryEndsWith10DFA);
   const [history, setHistory] = useState<DFAHistory[]>([
-    { state: "q0", timestamp: Date.now().toString(), position: 0 },
+    { state: "q0", timestamp: Date.now(), position: 0 },
   ]);
   const [execution, setExecution] = useState<DFAExecution>({
     inputString: "",
@@ -31,7 +32,7 @@ export const DFADiagram: React.FC = () => {
     }));
 
     setHistory([
-      { state: "q0", timestamp: Date.now().toString(), position: 0 },
+      { state: "q0", timestamp: Date.now(), position: 0 },
     ]);
     setExecution({
       inputString: "",
@@ -109,7 +110,7 @@ export const DFADiagram: React.FC = () => {
         {
           state: newState,
           input: currentChar,
-          timestamp: Date.now().toString(),
+          timestamp: Date.now(),
           position: newPosition,
         },
       ]);
@@ -141,15 +142,15 @@ export const DFADiagram: React.FC = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-8 p-6">
       <div className="flex-1">
-        <div className="bg-purple-100 rounded-lg shadow-lg p-6">
+        <div className="bg-violet-200 rounded-lg shadow-lg p-6">
           <h2 className="text-2xl font-bold mb-4 text-center">
             Deterministic Finite Automaton - Strings Ending with "10"
           </h2>
 
           <div className="flex justify-center mb-6">
             <svg
-              width="700"
-              height="300"
+              width="820"
+              height="350"
               className="border rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50"
             >
               {/* Define arrow marker */}
@@ -225,6 +226,8 @@ export const DFADiagram: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <DFAFooter />
       </div>
 
       {/* Control Panel */}
