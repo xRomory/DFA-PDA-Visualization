@@ -3,7 +3,9 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { routes } from "@/routes";
 import { queryClient } from "@/lib/queryClient";
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, {
+  basename: "/DFA-PDA-Visualization",
+});
 
 function App() {
   return (
