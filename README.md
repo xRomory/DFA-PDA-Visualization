@@ -6,6 +6,12 @@ This project helps users **understand how these automata work** by allowing them
 
 ---
 
+## 🌐 Live Demo
+
+🔗 **Try it here:** [https://xromory.github.io/DFA-PDA-Visualization/](https://xromory.github.io/DFA-PDA-Visualization/)
+
+---
+
 ## Project Overview
 
 This project was created as part of a **school activity** in **Automata Theory**, focusing on comparing **DFA** and **PDA** both **conceptually and visually**.
